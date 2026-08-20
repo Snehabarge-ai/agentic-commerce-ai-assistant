@@ -1,24 +1,82 @@
-# Agentic Commerce AI Assistant
+# 🤖 Agentic Commerce AI Assistant
 
-AI-powered shopping assistant: natural-language intent extraction, budget filtering, product ranking, comparison and explainable recommendations.
+An AI-powered shopping assistant that understands natural-language product requests, extracts user intent, filters products based on constraints, ranks the best options, and generates an AI-powered recommendation.
 
-## Stack
-- React + Vite
-- FastAPI + Python
-- Rule-based agent pipeline (LLM integration can be added later)
+## 🚀 Features
 
-## Run
-Backend:
-```bash
-cd backend
-python -m venv .venv
-.venv\\Scripts\\activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-Frontend:
-```bash
-cd frontend
-npm install
-npm run dev
-```
+- 🧠 Natural-language shopping query understanding
+- 🎯 Intent extraction
+- 🔎 Product catalog search
+- 💰 Budget constraint filtering
+- ⭐ Product ranking based on rating and use case
+- 🤖 Gemini-powered recommendation explanation
+- 🔄 Alternative product suggestions
+- 📊 Agent pipeline visualization
+- ⚡ React frontend with FastAPI backend
+
+## 🏗️ Agent Pipeline
+
+The application follows a multi-step agentic workflow:
+
+1. **Intent Extraction**  
+   Identifies product category, budget, and intended use.
+
+2. **Catalog Search**  
+   Searches the local product catalog for relevant products.
+
+3. **Constraint Filtering**  
+   Filters products according to category and budget.
+
+4. **Product Ranking**  
+   Ranks products using ratings and use-case relevance.
+
+5. **AI Recommendation Generation**  
+   Uses Google Gemini to explain why the selected product is suitable.
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- JavaScript
+- CSS
+
+### Backend
+- Python
+- FastAPI
+- Uvicorn
+
+### AI
+- Google Gemini API
+- Google GenAI SDK
+
+### Data
+- JSON product catalog
+
+### Development Tools
+- VS Code
+- Git
+- GitHub
+
+## 📁 Project Structure
+
+```text
+agentic-commerce-ai-assistant/
+│
+├── backend/
+│   ├── agent.py
+│   ├── main.py
+│   ├── products.json
+│   ├── requirements.txt
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   │   ├── main.jsx
+│   │   └── style.css
+│   ├── index.html
+│   ├── package.json
+│   └── package-lock.json
+│
+├── .gitignore
+└── README.md
