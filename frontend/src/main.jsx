@@ -32,15 +32,18 @@ function App() {
     setLoading(true);
 
     try {
-      const x = await fetch("https://agentic-commerce-ai-assistant-1.onrender.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          query: q,
-        }),
-      });
+      const x = await fetch(
+  "https://agentic-commerce-ai-assistant-1.onrender.com/api/recommend",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: q,
+    }),
+  }
+);
 
       const data = await x.json();
       setR(data);
