@@ -80,3 +80,38 @@ agentic-commerce-ai-assistant/
 │
 ├── .gitignore
 └── README.md
+## 🚀 Live Demo
+
+Frontend: https://agentic-commerce-ai-frontend.onrender.com
+
+Backend API: https://agentic-commerce-ai-assistant-1.onrender.com
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- JavaScript
+- CSS
+
+### Backend
+- Python
+- FastAPI
+- Pydantic
+- Uvicorn
+
+### AI & Agent
+- LLM-based query understanding
+- Intent extraction
+- Product filtering
+- Product ranking
+- AI recommendation generation
+
+## ▶️ How to Run Locally
+
+### Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
